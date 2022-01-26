@@ -1,0 +1,205 @@
+ul{
+    list-style-type: none;
+}
+*{
+    text-decoration:none;
+    font-size: 20px;
+    margin:0px;
+    box-sizing: border-box;
+}
+li{
+    display: inline;
+    margin-left:40px;
+}
+ li.active{
+     background-color:#2980b9;
+     padding:5px;
+     border-radius:5px;
+}
+.active:hover{
+    background-color:green;
+}
+table{
+    width:100%;
+    border:1px solid #7F8389;
+    border-collapse: collapse;
+}
+td{
+    border:1px solid #B2BEB5;
+}
+button{
+    margin:5px;
+    outline:none;
+    border:none;
+    padding:7px;
+    border-radius:7px;
+}
+input{
+    outline:none;
+}
+.logout{
+    margin-left:80%;
+    border:1px solid ;
+    width:150px;
+}
+.flex{
+    display:flex;
+}
+/*----------------------- login  page css -------------------------------------------------- */
+.login,.signup{
+    width:300px;
+    text-align:center;
+    background-color:white;
+    padding:10px;
+    border-radius:10px;
+}
+.login-btn,.signup-btn{
+    background-color:#0097e6;
+    width:150px;
+    color:white;
+}
+.signup-btn{
+    background-color:#44bd32;
+}
+
+/*--------------------  login page css end here --------------------------------------------------*
+/*------------------------- sign up page -------------------------------------------------------*/
+.signup{
+    /* same from login  */
+}
+/*------------------------navbar-----------------------------------------------------------*/
+.nav{
+    /* border:1px solid red; */
+    padding:10px;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    
+}
+.nav ul{
+    /* border:1px solid black; */
+    margin-left:-70px;
+}
+
+.nav a{
+    color:white;
+    font-size:25px;
+    font-weight:bold;
+}
+/*------------------------ moviepage css --------------------------------------------------*/
+.moviepage{
+    padding:10px;
+    background-color:white;
+    border-radius:10px;
+    text-align:center;
+    position:relative;
+    box-shadow: 1px 1px 2px 1px grey;
+}
+
+.moviepage input{
+    height:33px;
+}
+.add-btn{
+    background-color:#0652DD;
+    color:whitesmoke;  
+}
+.update-btn{
+    background-color:green;
+    color:whitesmoke; 
+}
+.delete-btn{
+    background-color:red;
+    color:whitesmoke;
+}
+.viewmodal{
+    border:2px solid grey;
+    border-radius:10px;
+    background-color:grey;
+    height:50vh;
+    width:100%;
+    margin-top:-100px;
+    position:absolute;
+    left:0px;
+    top:0px;
+}
+.view-btn{
+    background-color:orange;
+    
+}
+.viewcls-btn{
+    border:1px solid red;
+    margin-left:320px;
+    background-color:red;
+    color:white;
+}
+.mov-detail{
+    border-radius:5px;
+    background-color:whitesmoke;
+    width:300px;
+    height:200px;
+    margin-left:100px;
+    margin-top:30px;
+    padding-top:10px;
+}
+.mov-detail p{
+    border:2px solid red;
+    border-radius:5px;
+    margin:10px;
+}
+ /*---------------- header component --------------------------------------*/
+
+
+
+/* ---------------------------homepage css-------------------------------------- */
+.homepage{
+    height:80vh;
+    padding:10px;
+}
+/*------------------------------- logo page css------------------------ */
+.logo-div{
+    height:10vh;
+    background-color:#40407a; 
+    color:white;
+    display:flex;
+    align-items:center;
+}
+.ft-content{
+    margin-left:50px;
+    font-size:50px;
+     
+}
+  /*--------------------- app content CSS --------------------------------------------------------------------*/
+  .content{
+     min-height:80vh;
+      background-color:lightgreen;
+      display:flex;
+      justify-content:center;
+      align-items:center;
+  }
+
+      /*-------------------- footer css --------------------------------------------------------------------*/
+.footer{
+    height:10vh;
+    background-color:#535c68; 
+    color:white;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+ /*------------------------------ contact page css ------------------------------*/
+ .contact-container{
+     height:80vh;
+     padding:10px;
+ }
+/*----------------- userprofile component -----------------------------------*/
+.profile{
+    height:20px;
+     margin-top:13px; 
+     margin-right:10px;
+}
+ /*-------- logut component ------------------------------*/
+ .logout-btn{
+     border:1px solid orange;
+     background-color:orange;
+ }
+ 
