@@ -3,7 +3,7 @@ const mongoose = require('mongoose');
 const cors = require('cors');
 const bcryptjs =require('bcryptjs');
 const jwt = require('jsonwebtoken');
-
+let PORT = process.env.PORT || 8000;
 // mongoose conn
 mongoose.connect("mongodb://localhost:27017/batch_5_2")
 .then(()=>{
@@ -23,7 +23,7 @@ app.use(cors())
 
 app.use("/movies",movieRouter)
 app.use("/users",userRouter)
-app.listen(8000);
+app.listen(PORT);
 
 
 

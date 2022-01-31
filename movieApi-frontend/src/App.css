@@ -45,7 +45,7 @@ input{
 .flex{
     display:flex;
 }
-/*----------------------- login  page css -------------------------------------------------- */
+/*----------------------- login  page css -------------------------------*/               
 .login,.signup{
     width:300px;
     text-align:center;
@@ -60,6 +60,11 @@ input{
 }
 .signup-btn{
     background-color:#44bd32;
+}
+.errmsg{
+    margin-top:10px;
+    background-color:grey;
+    padding:7px;
 }
 
 /*--------------------  login page css end here --------------------------------------------------*

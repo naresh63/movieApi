@@ -20,12 +20,15 @@ function Movies() {
   let [viewmodal, setViewmodel] = useState(false);
   //--------------------- fetch all movies----------------------------------------------
   useEffect(() => {
+    let controller= new AbortController();
+    let signal = controller.signal;
     let token = localStorage.getItem("token");
     fetch("http://localhost:8000/movies", {
       method: "GET",
       headers: {
         Authorization: `Bearer ${token}`,
       },
+      signal:signal
     })
       .then((response) => response.json())
       .then((data) => {
@@ -33,6 +36,10 @@ function Movies() {
         setAllmovies(data);
       })
       .catch((err) => console.log(err));
+      // cleanup
+      return ()=>{
+        controller.abort();
+      }
   }, []);
   //---------------------delete movie-----------------------------------------------------
   function deletehandle(id) {
